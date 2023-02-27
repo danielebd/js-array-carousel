@@ -9,8 +9,12 @@ MILESTONE2
 - creazione array inserendo nomi img
 - creare elemento per inserimento elemento (itemContent) in html vuoto
 - creare elemnto che richiami il contenitore immagini div.slider  
-- creare ciclo for che si interrompe a img.length -1 per next e per .prev img[1]
+- creare ciclo for che si interrompe a img.length
 - richiamare la classe item e aggiungere la classe show creata precedentemente in css con classList.add('show').
 - creare elemento const next e const prev per div.next e div.prev richiamandole con querySelectorId
 
 MILESTONE3
+- creare evento che al click di prev e next swicci le immagini
+- creare elemnto active = 0
+- creare elemto items che richiami la classe .items tramite querySelectorAll('.item')
+- creare condizionale if che mi consenta di incrementare l'active di uno fino alla lunghezza dell'arrey - 1 e di decrementare l'active fino alla posizione 1

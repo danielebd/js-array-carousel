@@ -10,4 +10,16 @@
 
 const img = ['01webp', '02webp', '03webp', '04webp', '05webp',];
 
-for
+let itemContent = '';
+
+const slider = document.querySelector('.slider');
+
+for(let i = 0; i < img.length; i++){
+    console.log(img[i]);
+    itemContent += '<div class="item"><img src="img/01.webp" alt=""></div>';
+    
+}
+
+
+slider.innerHTML = slider.innerHTML + itemContent;
+document.querySelector('.item').classList.add('show');
