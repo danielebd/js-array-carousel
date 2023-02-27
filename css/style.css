@@ -3,3 +3,48 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 56.25rem;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 43.75rem;
+    height: 18.75rem;
+    background-color: aqua;
+    position: relative;
+}
+
+.next, .prev {
+    position: absolute;
+    z-index: 2;
+    background-color: bisque;
+    right: 50%;
+    transform: translate(50%);
+    background-color: lightgrey;
+}
+
+.next {
+    bottom: .625rem;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: solid .0625rem;
+    border-radius: 50px;
+}
+
+.prev {
+    top: .625rem;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: solid .0625rem;
+    border-radius: 50px;
+}
