@@ -19,13 +19,19 @@ document.querySelector('.item').classList.add('show');
 const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
 const items = document.querySelectorAll('.item');
-console.log(items)
+console.log(items);
+console.log(items.length);
 
 next.addEventListener('click', function() {
     if(active < items.length -1){
         items[active].classList.remove('show');
         active++;
         items[active].classList.add('show');
+    }
+    else if(active === items.length -1){
+        items[active].classList.remove('show');
+        active = 0;
+        items[active].classList.add('show');  
     }
 
 })
@@ -35,6 +41,11 @@ prev.addEventListener('click', function() {
         items[active].classList.remove('show');
         active--;
         items[active].classList.add('show');
+    }
+    else if(active === 0){
+        items[active].classList.remove('show');
+        active = items.length - 1;
+        items[active].classList.add('show');  
     }
 
 })
