@@ -5,7 +5,7 @@
 }
 
 .container {
-    max-width: 56.25rem;
+    max-width: 700px;
     height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -17,12 +17,11 @@
     width: 43.75rem;
     height: 18.75rem;
     background-color: aqua;
-    position: relative;
+    
 }
 
 .next, .prev {
     position: absolute;
-    z-index: 2;
     background-color: bisque;
     right: 50%;
     transform: translate(50%);
@@ -30,7 +29,7 @@
 }
 
 .next {
-    bottom: .625rem;
+    bottom: -1.625rem;
     width: 20px;
     height: 20px;
     text-align: center;
@@ -40,7 +39,7 @@
 }
 
 .prev {
-    top: .625rem;
+    top: -1.625rem;
     width: 20px;
     height: 20px;
     text-align: center;
@@ -61,4 +60,24 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+/* sidebar */
+.sidebar {
+    height: 18.75rem;
+    width: 6.25rem;
+    position: relative;
+}
+.item-side {
+    width: 100%;
+    height: calc(100% / 5);
+    opacity: 0.5;
+
+}
+.item-side img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.solid {
+    opacity: 1;
 }
