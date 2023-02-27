@@ -11,10 +11,12 @@ MILESTONE2
 - creare elemnto che richiami il contenitore immagini div.slider  
 - creare ciclo for che si interrompe a img.length
 - richiamare la classe item e aggiungere la classe show creata precedentemente in css con classList.add('show').
-- creare elemento const next e const prev per div.next e div.prev richiamandole con querySelectorId
+
 
 MILESTONE3
-- creare evento che al click di prev e next swicci le immagini
-- creare elemnto active = 0
-- creare elemto items che richiami la classe .items tramite querySelectorAll('.item')
-- creare condizionale if che mi consenta di incrementare l'active di uno fino alla lunghezza dell'arrey - 1 e di decrementare l'active fino alla posizione 1
+- creare elemento const next e const prev per div.next e div.prev richiamandole con document.querySelector
+- creare evento che al click di prev e next sarano predisposti a cambiare le immagini
+- creare elemento items che richiami la classe .items tramite querySelectorAll('.item') per creare una collezzione di elementi, una lista accessibile per indici
+- creare elemnto active = 0 perchè l'immagine di partenza che vogliamo visualizzare è quella in posizione 0 della lista items
+- creare condizionale if che mi consenta di incrementare l'active di 1 fino alla lunghezza della lista items - 1 e di decrementare l'active fino alla posizione 1
+l'active in posizione zero prenderà item corrispondente e ne rimuoverà la classe show successivamente l'active si incrementerà di uno con ++. Ora che è nella posizione successiva selezionerà l'item successivo a cui andremo ad aggiungere la classe show 
