@@ -48,3 +48,17 @@
     border: solid .0625rem;
     border-radius: 50px;
 }
+
+.item {
+    height: 100%;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
